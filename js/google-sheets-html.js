@@ -17,7 +17,7 @@ var visualization;
 function drawVisualization() {
     /* https://docs.google.com/spreadsheets/d/1D5zjEnzyDeMjj3E1X4wAntsFreVnfmeBcPUMAW21VdU/edit?usp=sharing */
     var query = new google.visualization.Query('https://spreadsheets.google.com/tq?key=1D5zjEnzyDeMjj3E1X4wAntsFreVnfmeBcPUMAW21VdU');
-    query.setQuery('SELECT A, B order by B asc label A "Names", B "Time Left"');
+    query.setQuery('SELECT A, B, C, D order by B asc label A "#", B "Clan", C "Names", D "Time Left"');
     query.send(handleQueryResponse);
 }
 
